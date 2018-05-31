@@ -1,0 +1,32 @@
+{
+    "name": "icydata/php-nhl-api",
+    "description": "A package to facilitate communication with NHL",
+    "authors": [
+        {
+            "name": "William Lang",
+            "email": "wlang@icydata.hockey",
+            "homepage": "https://www.icydata.hockey",
+            "role": "Engineer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "6.2.*",
+        "monolog/monolog": "1.*",
+        "symfony/http-foundation": "2.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1",
+        "phpunit/php-code-coverage": "^6.0",
+        "phpdocumentor/phpdocumentor": "2.*",
+        "graphp/graphviz": "^0.2.1"
+    },
+    "homepage": "https://www.icydata.hockey",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "version": "v1.0.0",
+    "autoload": {
+        "psr-4": {
+            "IcyData\\": "src/IcyData/"
+        }
+    }
+}
