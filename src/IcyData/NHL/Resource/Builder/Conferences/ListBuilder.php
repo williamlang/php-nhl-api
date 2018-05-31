@@ -29,18 +29,6 @@ class ListBuilder extends Builder {
         $url = sprintf('/api/%s/conferences', $this->version);
         $json = $this->get($url);
 
-        /**
-         * $conference
-         * Insert description here
-         *
-         *
-         * @return
-         *
-         * @access
-         * @static
-         * @see
-         * @since
-         */
         return array_map(function ($conference) {
             return new Conference($conference);
         }, $json['conferences']);

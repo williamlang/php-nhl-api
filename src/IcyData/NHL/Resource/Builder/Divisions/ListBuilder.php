@@ -29,18 +29,6 @@ class ListBuilder extends Builder {
         $url = sprintf('/api/%s/divisions', $this->version);
         $json = $this->get($url);
 
-        /**
-         * $division
-         * Insert description here
-         *
-         *
-         * @return
-         *
-         * @access
-         * @static
-         * @see
-         * @since
-         */
         return array_map(function ($division) {
             return new Division($division);
         }, $json['divisions']);
