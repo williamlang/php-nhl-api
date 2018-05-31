@@ -1,4 +1,11 @@
 <?php
+/**
+ * src/IcyData/NHL/Resource.php
+ *
+ * @package    icydata/php-nhl-api
+ * @author     William Lang <william@icydata.hockey>
+ * @link       https://github.com/williamlang/php-nhl-api
+ */
 
 namespace IcyData\NHL;
 

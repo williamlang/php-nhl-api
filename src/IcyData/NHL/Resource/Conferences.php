@@ -7,6 +7,11 @@ use IcyData\NHL\Object\Conference;
 use IcyData\NHL\Resource\Builder\Conferences\Get;
 use IcyData\NHL\Resource\Builder\Conferences\ListBuilder;
 
+/**
+ * Conferences Resource
+ *
+ * @author William Lang <william@icydata.hockey>
+ */
 class Conferences extends Resource {
 
     /**
