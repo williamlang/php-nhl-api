@@ -1,6 +1,6 @@
 <?php
 /**
- * src/IcyData/NHL/Object/Division.php
+ * src/IcyData/NHL/Object/Team.php
  *
  * @package    icydata/php-nhl-api
  * @author     William Lang <william@icydata.hockey>
@@ -12,13 +12,16 @@ namespace IcyData\NHL\Object;
 use IcyData\NHL\Object;
 
 /**
- * Represents a Division
+ * Represents a Team
  *
  * @author William Lang <william@icydata.hockey>
  */
-class Division extends Object {
+class Team extends Object {
 
     protected $mappings = [
-        'conference' => '\IcyData\NHL\Object\Conference'
+        'conference' => '\IcyData\NHL\Object\Conference',
+        'division'   => '\IcyData\NHL\Object\Division',
+        'franchise'  => '\IcyData\NHL\Object\Franchise',
+        'venue'      => '\IcyData\NHL\Object\Venue'
     ];
 }

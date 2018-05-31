@@ -21,6 +21,13 @@ use Symfony\Component\HttpFoundation\ParameterBag;
 abstract class Object extends ParameterBag {
 
     /**
+     * A mapping of parameter strings to the associated class
+     *
+     * @var array
+     */
+    protected $mappings = [];
+
+    /**
      * Object Constructor
      *
      * @param array $parameters An array of parameters
@@ -36,5 +43,11 @@ abstract class Object extends ParameterBag {
      * @param array $parameters
      * @return void
      */
-    abstract protected function transform(&$parameters);
+    protected function transform(&$parameters) {
+        foreach ($this->mappings as $mapping => $class) {
+            if (!empty($parameters[$mapping])) {
+                $parameters[$mapping] = new $class($parameters[$mapping]);
+            }
+        }
+    }
 }

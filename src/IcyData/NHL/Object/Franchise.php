@@ -1,6 +1,6 @@
 <?php
 /**
- * src/IcyData/NHL/Object/Conference.php
+ * src/IcyData/NHL/Object/Franchise.php
  *
  * @package    icydata/php-nhl-api
  * @author     William Lang <william@icydata.hockey>
@@ -12,10 +12,10 @@ namespace IcyData\NHL\Object;
 use IcyData\NHL\Object;
 
 /**
- * Represents a Conference
+ * Represents a Franchise
  *
  * @author William Lang <william@icydata.hockey>
  */
-class Conference extends Object {
+class Franchise extends Object {
 
 }

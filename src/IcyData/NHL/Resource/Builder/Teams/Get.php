@@ -1,26 +1,27 @@
 <?php
 /**
- * src/IcyData/NHL/Resource/Builder/Conferences/Get.php
+ * src/IcyData/NHL/Resource/Builder/Teams/Get.php
  *
  * @package    icydata/php-nhl-api
  * @author     William Lang <william@icydata.hockey>
  * @link       https://github.com/williamlang/php-nhl-api
  */
 
-namespace IcyData\NHL\Resource\Builder\Conferences;
+namespace IcyData\NHL\Resource\Builder\Teams;
 
-use IcyData\NHL\Object\Conference;
+use IcyData\NHL\Object\Team;
 use IcyData\NHL\Resource\Builder;
+use IcyData\NHL\Resource\Teams;
 
 /**
- * Get a specific conference
+ * Get a specific team
  *
  * @author William Lang <william@icydata.hockey>
  */
 class Get extends Builder {
 
     /**
-     * The id of the conference
+     * The id of the team
      *
      * @var int
      */
@@ -51,11 +52,11 @@ class Get extends Builder {
     /**
      * Send the request
      *
-     * @return Conference
+     * @return Team
      */
     public function send() {
-        $url = sprintf('/api/%s/conferences/%d', $this->version, $this->id);
+        $url = sprintf('/api/%s/teams/%d', $this->version, $this->id);
         $json = $this->get($url);
-        return new Conference($json['conferences'][0]);
+        return new Team($json['teams'][0]);
     }
 }

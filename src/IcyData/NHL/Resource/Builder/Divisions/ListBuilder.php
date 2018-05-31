@@ -23,7 +23,7 @@ class ListBuilder extends Builder {
     /**
      * Send the request
      *
-     * @return Division
+     * @return Division[]
      */
     public function send() {
         $url = sprintf('/api/%s/divisions', $this->version);

@@ -23,7 +23,7 @@ class ListBuilder extends Builder {
     /**
      * Send the request
      *
-     * @return Conference
+     * @return Conference[]
      */
     public function send() {
         $url = sprintf('/api/%s/conferences', $this->version);
