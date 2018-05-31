@@ -18,6 +18,7 @@ use GuzzleHttp\Middleware;
 use GuzzleHttp\Psr7\Request as GuzzleRequest;
 use GuzzleHttp\Psr7\Response as GuzzleResponse;
 use IcyData\NHL\Resource\Conferences;
+use IcyData\NHL\Resource\Divisions;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 
@@ -69,6 +70,13 @@ class Client {
     public $conferences;
 
     /**
+     * Divisions Resource
+     *
+     * @var Divisions
+     */
+    public $divisions;
+
+    /**
      * Client constructor
      *
      * @param LoggerInterface $logger
@@ -87,6 +95,7 @@ class Client {
 
         // resources here
         $this->conferences = new Conferences($this);
+        $this->divisions = new Divisions($this);
     }
 
     /**

@@ -1,19 +1,19 @@
 <?php
 /**
- * src/IcyData/NHL/Resource/Builder/Conferences/ListBuilder.php
+ * src/IcyData/NHL/Resource/Builder/Divisions/ListBuilder.php
  *
  * @package    icydata/php-nhl-api
  * @author     William Lang <william@icydata.hockey>
  * @link       https://github.com/williamlang/php-nhl-api
  */
 
-namespace IcyData\NHL\Resource\Builder\Conferences;
+namespace IcyData\NHL\Resource\Builder\Divisions;
 
 use IcyData\NHL\Resource\Builder;
-use IcyData\NHL\Object\Conference;
+use IcyData\NHL\Object\Division;
 
 /**
- * Get all active conferences
+ * Get all active divisions
  *
  * @author William Lang <william@icydata.hockey>
  * @abstract This class is basically not needed until the NHL API adds search, but leaving it here in case they do
@@ -23,14 +23,14 @@ class ListBuilder extends Builder {
     /**
      * Send the request
      *
-     * @return Conference
+     * @return Division
      */
     public function send() {
-        $url = sprintf('/api/%s/conferences', $this->version);
+        $url = sprintf('/api/%s/divisions', $this->version);
         $json = $this->get($url);
 
         /**
-         * $conference
+         * $division
          * Insert description here
          *
          *
@@ -41,8 +41,8 @@ class ListBuilder extends Builder {
          * @see
          * @since
          */
-        return array_map(function ($conference) {
-            return new Conference($conference);
-        }, $json['conferences']);
+        return array_map(function ($division) {
+            return new Division($division);
+        }, $json['divisions']);
     }
 }
