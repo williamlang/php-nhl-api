@@ -18,6 +18,9 @@ use IcyData\NHL\Object;
  */
 class Team extends Object {
 
+    /**
+     * @inheritDoc
+     */
     protected $mappings = [
         'conference' => '\IcyData\NHL\Object\Conference',
         'division'   => '\IcyData\NHL\Object\Division',
