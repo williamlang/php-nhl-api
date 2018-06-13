@@ -20,6 +20,7 @@ use GuzzleHttp\Psr7\Response as GuzzleResponse;
 use IcyData\NHL\Resource\Conferences;
 use IcyData\NHL\Resource\Divisions;
 use IcyData\NHL\Resource\Teams;
+use IcyData\NHL\Resource\People;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 
@@ -85,6 +86,13 @@ class Client {
     public $teams;
 
     /**
+     * People Resource
+     *
+     * @var People
+     */
+    public $people;
+
+    /**
      * Client constructor
      *
      * @param LoggerInterface $logger
@@ -105,6 +113,7 @@ class Client {
         $this->conferences = new Conferences($this);
         $this->divisions = new Divisions($this);
         $this->teams = new Teams($this);
+        $this->people = new People($this);
     }
 
     /**

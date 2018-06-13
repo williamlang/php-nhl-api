@@ -18,5 +18,13 @@ use IcyData\NHL\Object;
  */
 class Person extends Object {
 
+    /**
+     * @inheritDoc
+     *
+     * @var array
+     */
+    protected $mappings = [
+        'currentTeam' => '\IcyData\NHL\Object\Team'
+    ];
 }
 

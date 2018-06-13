@@ -50,7 +50,7 @@ class Get extends Builder {
         return $this;
     }
 
-/**
+    /**
      * Add an expand type to the request
      *
      * @see src/IcyData/NHL/Resource/Teams.php
