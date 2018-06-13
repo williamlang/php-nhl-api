@@ -49,7 +49,7 @@ abstract class Builder {
      */
     protected function get(string $url, array $opts = array()) {
         try {
-            $response = $this->guzzle->get($url);
+            $response = $this->guzzle->get($url, $opts);
             $json = json_decode((string)$response->getBody(), true);
             return $json;
         } catch (ClientException $e) {

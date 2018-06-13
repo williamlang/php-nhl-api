@@ -1,0 +1,17 @@
+{
+  "copyright": "NHL and the NHL Shield are registered trademarks of the National Hockey League. NHL and NHL team marks are the property of the NHL and its teams. © NHL 2018. All Rights Reserved.",
+  "divisions": [
+    {
+      "id": 18,
+      "name": "Metropolitan",
+      "link": "/api/v1/divisions/18",
+      "abbreviation": "M",
+      "conference": {
+        "id": 6,
+        "name": "Eastern",
+        "link": "/api/v1/conferences/6"
+      },
+      "active": true
+    }
+  ]
+}

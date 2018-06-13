@@ -3,7 +3,6 @@
 namespace IcyData\NHL\Resource;
 
 use IcyData\NHL\Resource;
-use IcyData\NHL\Object\Conference;
 use IcyData\NHL\Resource\Builder\Conferences\Get;
 use IcyData\NHL\Resource\Builder\Conferences\ListBuilder;
 
@@ -17,7 +16,7 @@ class Conferences extends Resource {
     /**
      * Get a list of all conferences
      *
-     * @return Conference[]
+     * @return ListBuilder
      */
     public function list() {
         return new ListBuilder($this);
@@ -27,7 +26,7 @@ class Conferences extends Resource {
      * Get a list of all conferences
      *
      * @param int $id
-     * @return Conference
+     * @return Get
      */
     public function get(int $id) {
         return new Get($this, $id);

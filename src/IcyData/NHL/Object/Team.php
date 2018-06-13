@@ -25,6 +25,7 @@ class Team extends Object {
         'conference' => '\IcyData\NHL\Object\Conference',
         'division'   => '\IcyData\NHL\Object\Division',
         'franchise'  => '\IcyData\NHL\Object\Franchise',
+        'roster'     => '\IcyData\NHL\Object\Roster',
         'venue'      => '\IcyData\NHL\Object\Venue'
     ];
 }

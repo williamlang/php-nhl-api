@@ -23,24 +23,12 @@ class ListBuilder extends Builder {
     /**
      * Send the request
      *
-     * @return Conference
+     * @return Conference[]
      */
     public function send() {
         $url = sprintf('/api/%s/conferences', $this->version);
         $json = $this->get($url);
 
-        /**
-         * $conference
-         * Insert description here
-         *
-         *
-         * @return
-         *
-         * @access
-         * @static
-         * @see
-         * @since
-         */
         return array_map(function ($conference) {
             return new Conference($conference);
         }, $json['conferences']);
