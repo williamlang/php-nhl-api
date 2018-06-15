@@ -19,8 +19,9 @@ use GuzzleHttp\Psr7\Request as GuzzleRequest;
 use GuzzleHttp\Psr7\Response as GuzzleResponse;
 use IcyData\NHL\Resource\Conferences;
 use IcyData\NHL\Resource\Divisions;
-use IcyData\NHL\Resource\Teams;
+use IcyData\NHL\Resource\Draft;
 use IcyData\NHL\Resource\People;
+use IcyData\NHL\Resource\Teams;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 
@@ -114,6 +115,7 @@ class Client {
         $this->divisions = new Divisions($this);
         $this->teams = new Teams($this);
         $this->people = new People($this);
+        $this->draft = new Draft($this);
     }
 
     /**
