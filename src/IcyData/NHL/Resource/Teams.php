@@ -3,7 +3,7 @@
 namespace IcyData\NHL\Resource;
 
 use IcyData\NHL\Resource;
-use IcyData\NHL\Object\Team;
+use IcyData\NHL\NHLObject\Team;
 use IcyData\NHL\Resource\Builder\Teams\ListBuilder;
 use IcyData\NHL\Resource\Builder\Teams\Get;
 

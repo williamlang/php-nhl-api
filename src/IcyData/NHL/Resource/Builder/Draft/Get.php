@@ -9,7 +9,7 @@
 
 namespace IcyData\NHL\Resource\Builder\Draft;
 
-use IcyData\NHL\Object\DraftPick;
+use IcyData\NHL\NHLObject\DraftPick;
 use IcyData\NHL\Resource;
 use IcyData\NHL\Resource\Builder;
 

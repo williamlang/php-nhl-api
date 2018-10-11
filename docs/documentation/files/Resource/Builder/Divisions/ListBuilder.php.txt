@@ -10,7 +10,7 @@
 namespace IcyData\NHL\Resource\Builder\Divisions;
 
 use IcyData\NHL\Resource\Builder;
-use IcyData\NHL\Object\Division;
+use IcyData\NHL\NHLObject\Division;
 
 /**
  * Get all active divisions

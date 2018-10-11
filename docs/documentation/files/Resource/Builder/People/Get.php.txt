@@ -9,7 +9,7 @@
 
 namespace IcyData\NHL\Resource\Builder\People;
 
-use IcyData\NHL\Object\Person;
+use IcyData\NHL\NHLObject\Person;
 use IcyData\NHL\Resource;
 use IcyData\NHL\Resource\Builder;
 use IcyData\NHL\Resource\People;

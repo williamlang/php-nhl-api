@@ -9,7 +9,7 @@
 
 namespace IcyData\NHL\Resource\Builder\Conferences;
 
-use IcyData\NHL\Object\Conference;
+use IcyData\NHL\NHLObject\Conference;
 use IcyData\NHL\Resource;
 use IcyData\NHL\Resource\Builder;
 

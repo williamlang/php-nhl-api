@@ -3,7 +3,7 @@
 namespace IcyData\NHL\Resource;
 
 use IcyData\NHL\Resource;
-use IcyData\NHL\Object\Person;
+use IcyData\NHL\NHLObject\Person;
 use IcyData\NHL\Resource\Builder\People\Get;
 
 class People extends Resource {

@@ -22,7 +22,7 @@ class Player extends NHLObject {
      * @inheritDoc
      */
     protected $mappings = [
-        'person' => '\IcyData\NHL\Object\Person'
+        'person' => '\IcyData\NHL\NHLObject\Person'
     ];
 
 }

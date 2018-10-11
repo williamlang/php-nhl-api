@@ -10,7 +10,7 @@
 namespace IcyData\NHL\Resource\Builder\Teams;
 
 use IcyData\NHL\Exception\NHLException;
-use IcyData\NHL\Object\Team;
+use IcyData\NHL\NHLObject\Team;
 use IcyData\NHL\Resource\Builder;
 use IcyData\NHL\Resource\Teams;
 

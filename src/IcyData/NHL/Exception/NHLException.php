@@ -12,7 +12,7 @@ use GuzzleHttp\Exception\ClientException;
 class NHLException extends \Exception {
 
     /**
-     * Create a TSM Exception from a ClientException
+     * Create an NHL Exception from a ClientException
      *
      * @param ClientException $e
      * @return NHLException

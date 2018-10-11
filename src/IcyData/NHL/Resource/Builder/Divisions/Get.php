@@ -9,7 +9,7 @@
 
 namespace IcyData\NHL\Resource\Builder\Divisions;
 
-use IcyData\NHL\Object\Division;
+use IcyData\NHL\NHLObject\Division;
 use IcyData\NHL\Resource;
 use IcyData\NHL\Resource\Builder;
 
