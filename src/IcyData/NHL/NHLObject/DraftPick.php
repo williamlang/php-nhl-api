@@ -1,28 +1,28 @@
 <?php
 /**
- * src/IcyData/NHL/Object/Player.php
+ * src/IcyData/NHL/Object/DraftPick.php
  *
  * @package    icydata/php-nhl-api
  * @author     William Lang <william@icydata.hockey>
  * @link       https://github.com/williamlang/php-nhl-api
  */
 
-namespace IcyData\NHL\Object;
+namespace IcyData\NHL\NHLObject;
 
-use IcyData\NHL\Object;
+use IcyData\NHL\NHLObject;
 
 /**
- * Represents a Player
+ * Represents a Draft Pick
  *
  * @author William Lang <william@icydata.hockey>
  */
-class Player extends Object {
+class DraftPick extends NHLObject {
 
     /**
      * @inheritDoc
      */
     protected $mappings = [
-        'person' => '\IcyData\NHL\Object\Person'
+        'team'     => '\IcyData\NHL\NHLObject\Team',
+        'prospect' => '\IcyData\NHL\NHLObject\Prospect'
     ];
-
 }

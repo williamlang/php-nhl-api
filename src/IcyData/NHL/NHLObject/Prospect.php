@@ -7,15 +7,15 @@
  * @link       https://github.com/williamlang/php-nhl-api
  */
 
-namespace IcyData\NHL\Object;
+namespace IcyData\NHL\NHLObject;
 
-use IcyData\NHL\Object;
+use IcyData\NHL\NHLObject;
 
 /**
  * Represents a Prospect
  *
  * @author William Lang <william@icydata.hockey>
  */
-class Prospect extends Object {
+class Prospect extends NHLObject {
 
 }

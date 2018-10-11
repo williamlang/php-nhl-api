@@ -1,29 +1,27 @@
 <?php
 /**
- * src/IcyData/NHL/Object/Person.php
+ * src/IcyData/NHL/Object/Division.php
  *
  * @package    icydata/php-nhl-api
  * @author     William Lang <william@icydata.hockey>
  * @link       https://github.com/williamlang/php-nhl-api
  */
 
-namespace IcyData\NHL\Object;
+namespace IcyData\NHL\NHLObject;
 
-use IcyData\NHL\Object;
+use IcyData\NHL\NHLObject;
 
 /**
- * Represents a Person
+ * Represents a Division
  *
  * @author William Lang <william@icydata.hockey>
  */
-class Person extends Object {
+class Division extends NHLObject {
 
     /**
      * @inheritDoc
-     *
-     * @var array
      */
     protected $mappings = [
-        'currentTeam' => '\IcyData\NHL\Object\Team'
+        'conference' => '\IcyData\NHL\NHLObject\Conference'
     ];
 }

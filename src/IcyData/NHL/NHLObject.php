@@ -18,7 +18,7 @@ use Symfony\Component\HttpFoundation\ParameterBag;
  *
  * @author William Lang <william@icydata.hockey>
  */
-abstract class Object extends ParameterBag {
+abstract class NHLObject extends ParameterBag {
 
     /**
      * A mapping of parameter strings to the associated class

@@ -7,16 +7,16 @@
  * @link       https://github.com/williamlang/php-nhl-api
  */
 
-namespace IcyData\NHL\Object;
+namespace IcyData\NHL\NHLObject;
 
-use IcyData\NHL\Object;
+use IcyData\NHL\NHLObject;
 
 /**
  * Represents a Roster
  *
  * @author William Lang <william@icydata.hockey>
  */
-class Roster extends Object {
+class Roster extends NHLObject {
 
     /**
      * Players

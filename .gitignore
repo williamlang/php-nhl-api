@@ -2,3 +2,4 @@ vendor
 .vscode
 docblock.php
 rest.http
+.DS_Store
